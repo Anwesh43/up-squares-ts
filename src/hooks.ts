@@ -52,7 +52,7 @@ export const useStyle = (w : number, h : number, scale : number) => {
         blockStyle(i : number) : CSSProperties {
             return {
                 left: `${w / 2 - size / 2}px`,
-                top: `${h / 2 + (i * h / 2) - (h / 2 + size * (1 - j) * sf)}px`,
+                top: `${h / 2 + (i * h / 2) - (h / 2 + size * (1 - i)) * sf}px`,
                 width: `${size}px`,
                 height: `${size}px`,
                 position: 'absolute',
